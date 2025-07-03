@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Caveinformation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <style>
+    body {
+      height: 100dvh;
+      background-image: url("Media/Imagenes/fondo-arcane.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 20%;
+    }
+
+    .shadow-lg, .container {
+      background-color: rgba(165, 15, 15, 0.26) !important;
+    }
+
+    .container {
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #1d0808;
+      border-radius: 4px;
+      background-color: rgba(240, 248, 255, 0.575);
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    label{
+      color:aliceblue;
+    }
+
+    h1{
+      color: aliceblue !important;
+    }
+  </style>
+</head>
+
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+  <main class="form-signin m-auto">
+    <form action="pages/resultado.html" method="get" class="formulario" id="registro123"></form>
+    <div class="col-12">
+      <div class="card shadow-lg">
+        <img class="mb-4" src="Media/Imagenes/Ctijeras-Photoroom.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">registro de cuenta</h1>
+        <div class="container">
+          <label for="nombre">Nombre de usuario:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" class="form-control" name="email" required>
+          <div id="errorEmail" class="invalid-feedback"></div>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          <span id="errorPassword" style="color: red;"></span>
+
+          <label for="confirmar">Confirmar contraseña:</label>
+          <input type="password" id="confirmar" name="confirmar" required>
+
+          <div class="error" id="errorMsg"></div>
+
+          <button type="submit">Registrar</button>
+        </div>
+      </div>
+  </main>
+  <script src="Javascript/registro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Datos de Registro</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <main class="resultado-main">
+    <h1>Datos recibidos del formulario de registro</h1>
+    <div id="resultados"></div>
+    <a href="../index.html" class="volver">Volver al inicio</a>
+  </main>
+  <script>
+    // Obtenemos los parámetros de la URL
+    const params = new URLSearchParams(window.location.search);
+
+    // Obtenemos el valor del checkbox de condiciones
+    const aceptaCondiciones = params.get('acepta') === 'si' ? 'Sí' : 'No';
+
+    // Obtenemos el valor del checkbox de cookies
+    const aceptaCookies = params.get('acepta_cookies') === 'si' ? 'Sí' : 'No';
+
+    // Muestra los resultados en el elemento con id="resultados"
+    document.getElementById('resultados').innerHTML = `
+    <p><strong>Usuario:</strong> ${params.get('usuario') || '-'}</p>
+    <p><strong>Contraseña:</strong> ${params.get('clave') ? '********' : '-'}</p>
+    <p><strong>Acepta condiciones:</strong> ${aceptaCondiciones}</p>
+    <p><strong>Acepta cookies:</strong> ${aceptaCookies}</p>
+  `;
+  </script>
+
+</body>
+
+</html>

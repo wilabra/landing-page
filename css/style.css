@@ -1,0 +1,236 @@
+.cabecera-principal {
+    background-color: #030107;
+    /* Color de fondo azul */
+    color: white;
+    /* Color de texto blanco */
+    width: 100%;
+    /* Ancho completo */
+    height: 5em;
+    /* Altura fija */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    position: fixed;
+    /* Cabecera pegajosa al hacer scroll */
+    top: 0;
+    /* Posición desde arriba */
+    left: 0;
+    /* Posición desde la izquierda */
+    z-index: 100;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.contenedor-cabecera {
+    width: 90%;
+    /* Ancho relativo al viewport */
+    max-width: 1200px;
+    /* Ancho máximo para pantallas grandes */
+    padding: 1rem 2em;
+    /* Espaciado interno vertical */
+    display: flex;
+    /* Usa flexbox para alineación */
+    flex-wrap: wrap;
+    /* Permite envolver elementos en móviles */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Centrado vertical */
+}
+
+.titulo-principal {
+    font-size: 1.8rem;
+    /* Tamaño de fuente grande */
+    margin: 0;
+    /* Elimina margen predeterminado */
+    padding: 0.5rem 0;
+    /* Espaciado interno vertical */
+    transition: transform 0.3s ease-out;
+    /* Transición suave para hover */
+    color: #f4f7fa;
+}
+
+.titulo-principal:hover {
+    transform: scale(1.05);
+    /* Efecto de escala al hacer hover */
+    color:blue
+}
+
+/* ========== NAVEGACIÓN PRINCIPAL ========== */
+.navegacion-principal {
+    margin-top: 0.5rem;
+    /* Espacio superior */
+    text-align: right;
+}
+
+.menu-principal {
+    list-style: none;
+    /* Elimina viñetas de lista */
+    display: flex;
+    /* Menú en línea con flexbox */
+    gap: 1.5rem;
+    /* Espacio entre elementos del menú */
+}
+
+.item-menu a {
+    color: white;
+    /* Color de texto blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    padding: 0.5rem 0.8rem;
+    /* Espaciado interno */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transiciones suaves */
+}
+
+.item-menu a:hover,
+.item-menu.actual a {
+    background-color: rgb(37, 12, 177);
+    /* Fondo semi-transparente al hover/activo */
+}
+
+.item-menu.actual a {
+    font-weight: bold;
+    /* Texto en negrita para elemento activo */
+}
+.negro{
+    background-color: black;
+}
+
+.log-img{
+    align-items: flex-start;
+}
+
+.contenido-principal {
+    width: 25%;
+    max-width: 2000px;
+    margin: 1rem ;
+    padding: 16px;
+    background-color: rgb(207, 198, 198);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.form-section {
+    margin-bottom: 2.5rem;
+}
+
+label {
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: #2a2a2a;
+}
+
+.input::placeholder{
+  color: rgb(4, 4, 27);
+  font-size: 0,8em;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 1em;
+  display: flex;
+}
+
+.input::placeholder{
+  color: rgb(2, 2, 24);
+  font-size: 0,8em;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 1em;
+  display: flex;
+}
+
+.introduccion{
+ flex-wrap:wrap;
+}
+
+@media (max-width: 700px) {
+    .cabecera-principal {
+        max-width: 98vw;
+        padding: 0 0.5rem;
+    }
+    .contenedor-cabecera {
+        padding: 1.2rem 0.5rem;
+    }
+    .titulo-principal {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+.contenedor-flex {
+    display: flex; /* Define el contexto flexible */
+    padding: 0.5em;
+    gap: 0.5rem; /* Espaciado entre elementos */
+    min-height: 100px; /* Altura mínima para mejor visualización */
+    transition: all 0.3s ease; /* Transición suave al cambiar de tamaño */
+}
+
+.user-flex{
+    margin-bottom: 16px;
+}
+.elemento:nth-child(2) {
+    background: #c8e6c9;
+    border: 1px solid #4caf50;
+    flex: 2 1 auto; /* Crece el doble, puede encogerse, tamaño automático */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.entrar{
+    position: relative;
+    left: 12em;
+    bottom: 4rem;
+}
+
+fieldset {
+    border: 2px solid #010814;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+    background: #fafdff;
+    position: relative;
+    top: 15em;
+    width: 25%;
+    max-width: 2000px;
+    text-align: right;
+
+}
+input[type="submit"],button[type="submit"] {
+    background: #af2d06;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(79,140,255,0.10);
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+legend {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #06337c;
+    padding: 0 12px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(79,140,255,0.07);
+}
+input[type="submit"]:hover,button[type="submit"]:hover {
+    background: #4735e8;
+    box-shadow: 0 4px 14px rgba(79,140,255,0.18);
+}
