@@ -2,81 +2,1445 @@
 <html lang="en">
 
 <head>
-    <title>pos nomas</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Caverift</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-<style>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <style>
     main {
       position: relative;
       top: 20em;
+      right: 8em;
     }
-</style>
-    </head>
+
+    .text-center {
+      background: linear-gradient(45deg,
+          #05bd0e,
+          #037024);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 5s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h2 {
+      color: aliceblue;
+    }
+
+    label {
+      color: aliceblue;
+    }
+
+    .border {
+      color: rgb(rgb(238, 148, 148));
+      position: relative;
+      top: 4em;
+    }
+
+    .champion-card {
+      background-color: rgba(40, 43, 43, 0.568);
+      position: relative;
+      right: 3.6em;
+    }
+
+    .impacto-label {
+      position: relative;
+      top: 5em;
+      left: 3em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    img {
+      border-radius: 7px;
+      padding: 2px;
+    }
+
+    .color-label {
+      background: linear-gradient(45deg,
+          #f70707,
+          #000000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label2 {
+      background: linear-gradient(45deg,
+          #990707,
+          #4e4242);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label3 {
+      background: linear-gradient(45deg,
+          #09b309,
+          #ccae05);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label4 {
+      background: linear-gradient(45deg,
+          #5a5050,
+          #0b08d6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label5 {
+      background: linear-gradient(45deg,
+          #dd0606,
+          #530303);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label6 {
+      background: linear-gradient(45deg,
+          #070303,
+          #f2f2f5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label7 {
+      background: linear-gradient(45deg,
+          #8704af,
+          #099114);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label8 {
+      background: linear-gradient(45deg,
+          #f6f5f7,
+          #0793a5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label9 {
+      background: linear-gradient(45deg,
+          #8704af,
+          #e708a4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label10 {
+      background: linear-gradient(45deg,
+          #000000,
+          #f50000);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label11 {
+      background: linear-gradient(45deg,
+          #a50698,
+          #e8e8ec);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label12 {
+      background: linear-gradient(45deg,
+          #7a98bb,
+          #1358ec);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label13 {
+      background: linear-gradient(45deg,
+          #cf7805,
+          #e8e8ec);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label14 {
+      background: linear-gradient(45deg,
+          #a50698,
+          #df8107);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label15 {
+      background: linear-gradient(45deg,
+          #d10606,
+          #b97105);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .color-label16 {
+      background: linear-gradient(45deg,
+          #0609dd,
+          #0dafd8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400% 400%;
+      animation: cambio-degradado 4s ease infinite;
+    }
+
+    @keyframes cambio-degradado {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
 
 <body style="background-color: black;">
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="Media/Imagenes/Ctijeras-Photoroom.png" width="60px" height="60px">
-    </a>
-    <h1 class="titulo-principal">La cueva favorita de tus campeones</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Caverift</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="prueba2.html">Iniciar Sesion</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Más
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Lineas</a></li>
-              <li><a class="dropdown-item" href="#">Objetos</a></li>
-              <li>
-                <hr class="dropdown-divider">
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Media/Imagenes/Ctijeras-Photoroom.png" width="60px" height="60px">
+        </a>
+        <h1 class="titulo-principal">La cueva favorita de tus campeones</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Caverift</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li><a class="dropdown-item" href="prueba3.html">Contacto</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="prueba2.html">Iniciar Sesion</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Más
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Lineas</a></li>
+                  <li><a class="dropdown-item" href="#">Objetos</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="prueba3.html">Contacto</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-</header>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    </nav>
+  </header>
+  <h2 class="text-center" style="position: relative; top: 7em; left: em;">Jungla</h2>
+  <main>
+    <div class="container-fluid d-flex" style="margin: 0 auto;">
+      <div class="container d-grid">
+        <div class="champion-card d-flex">
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/Aatrox.webp" alt="Aatrox" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Aatrox</h2>
+                  <div class="nickname-label">
+                    <label class="color-label">La espada Darkin</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/Aatrox-aspecto-muerte.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/espada-oscuros.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/cadenas-infernales.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/deslizamiento-sombrio.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/aniquilador-de-mundos.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-success"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/ambesa.webp" alt="Ambesa" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Ambesa</h2>
+                  <div class="nickname-label">
+                    <label class="color-label2">La Matriarca de la Guerra</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/caza-perrodraco.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/barrido-artero.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/vituperio.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/laceracion.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/ajusticiar.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-warning"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 19.1em; right: 2.6em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 19.9em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/amumu.webp" alt="Amumu" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Amumu</h2>
+                  <div class="nickname-label">
+                    <label class="color-label3">La Momia Triste</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                  <img src="Media/Imagenes/support-icono.jpg" alt="icono-sup" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/toque-maldito.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/lanzamiento-vendas.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/desesperacion.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/berrinche.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/maldicion-momia-triste.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-danger"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.3em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="champion-card d-flex">
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/camille.webp" alt="Camille" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Camille</h2>
+                  <div class="nickname-label">
+                    <label class="color-label4">La sombra de acero</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/defensa-adaptable.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/protocolo-precision.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/barrido-tactico.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/tiro-gancho.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/ultimatum-hextech.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/darius.webp" alt="Darius" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Darius</h2>
+                  <div class="nickname-label">
+                    <label class="color-label5">La mano de Noxus</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/hemorragia.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/diezmar.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/golpe-atroz.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/atrapar.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/guillotina-noxiana.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-success"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/diana.webp" alt="Diana" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Diana</h2>
+                  <div class="nickname-label">
+                    <label class="color-label6">El Desdén de la Luna</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                  <img src="Media/Imagenes/icono-mid.jpg" alt="icono-mid" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/hoja-lunaplata.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/impacto-creciente.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/cascada-palida.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/torrente-lunar.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/lluvia-luna.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-danger"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-warning"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="champion-card d-flex">
+         <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/dr-mundo.webp" alt="DR.MUNDO" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>DR.Mundo</h2>
+                  <div class="nickname-label">
+                    <label class="color-label7">El Loco de Zaun</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/va-donde-quiere.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/serrucho-infectado.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/desisfibrulacion.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/traumatismo.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/dosis-maxima.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-danger"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-warning"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/ekko.webp" alt="Ekko" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Ekko</h2>
+                  <div class="nickname-label">
+                    <label class="color-label8">El Chico que Quebró el Tiempo</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                     <img src="Media/Imagenes/icono-mid.jpg" alt="icono-mid" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/resonancia-z.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/engranaje-temporal.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/convergencia-paralela.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/salto-fase.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/fisura-temporal.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 19.1em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 19.9em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/evelynn.webp" alt="Evelynn" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Evelynn</h2>
+                  <div class="nickname-label">
+                    <label class="color-label9">El Abrazo Agónico</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/sombra-demoniaca.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/pua-odio.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/sed-lujuria.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/latigazo.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/hacedora-viudas.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="champion-card d-flex">
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/fiddlesticks.webp" alt="Fiddlesticks" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Fiddlesticks</h2>
+                  <div class="nickname-label">
+                    <label class="color-label10">El Terror Ancestral</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/simple-espantapajaros.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/terror.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/cosecha-abundante.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/segar.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/tormenta-cuervos.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-danger"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/fiora.webp" alt="Fiora" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Fiora</h2>
+                  <div class="nickname-label">
+                    <label class="color-label11">La Estocada Excelsa</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-mid" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/baile-duelista.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/embestida.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/replica.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/esgrima.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/duelo-excelso.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/fizz.webp" alt="Fizz" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Fizz</h2>
+                  <div class="nickname-label">
+                    <label class="color-label12">El Gamberro de las Mareas</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-mid" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/icono-mid.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/tridente-piedramar.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/golpe-erizo-mar.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/ola-desgarradora.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/jugueton-gamberro.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/carnaza-tiburones.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 19.1em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 19.9em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="champion-card d-flex">
+         <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/gnar.png" alt="Gnar" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Gnar</h2>
+                  <div class="nickname-label">
+                    <label class="color-label13">El Eslabon Perdido</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/gen-furia.png" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/bumeran.png" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/hiper.png" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/brinco.png" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/¡gnar!.png" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-success"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/gragas.webp" alt="Gragas" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Gragas</h2>
+                  <div class="nickname-label">
+                    <label class="color-label14">El Camorrista</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                  <img src="Media/Imagenes/icono-mid.jpg" alt="icono-mid" class="role-icon" width="50" height="50">
+                  <img src="Media/Imagenes/support-icono.jpg" alt="icono-sup" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/hora-feliz.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/barril-rodante.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/furia-ebria.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/barrigazo.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/tonel-explosivo.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-warning"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-success"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-warning"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 4.1em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 7.1em;">Late</label>
+              </div>
+            </div>
+          </a>
+          <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/graves.webp" alt="Graves" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Graves</h2>
+                  <div class="nickname-label">
+                    <label class="color-label15">El Forajido</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">        
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-jungla" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/nuevo-destino.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/fin-trayecto.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/pantalla-humo.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/disparo-veloz.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/dano-colateral.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-success"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-warning"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.5em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.5em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="champion-card d-flex">
+         <a href="#" style="margin: 2rem;">
+            <div class="champion-card-content d-flex">
+              <div class="champion-image-content d-flex">
+                <img src="Media/Imagenes/gwen.webp" alt="MI VIEJA WE" width="200" height="400">
+              </div>
+              <div class="champion-card-details">
+                <div class="champion-banner">
+                  <h2>Gwen</h2>
+                  <div class="nickname-label">
+                    <label class="color-label16">La Costurera Consagrada</label>
+                  </div>
+                </div>
+                <div class="champion-list-role d-flex">                 
+                  <img src="Media/Imagenes/icono-jungla-Photoroom.jpg" alt="icono-sup" class="role-icon" width="50"
+                    height="50">
+                    <img src="Media/Imagenes/top-icon.jpg" alt="icono-top" class="role-icon" width="50" height="50">
+                </div>
+                <div class="champion-skills d-flex">
+                  <img src="Media/Imagenes/mil-cortes.webp" alt="Pasiva" width="35" height="30">
+                  <img src="Media/Imagenes/corta-corta.webp" alt="QH1" width="35" height="30">
+                  <img src="Media/Imagenes/niebla-consagrada.webp" alt="WH2" width="35" height="30">
+                  <img src="Media/Imagenes/salto-corte.webp" alt="EH3" width="35" height="30">
+                  <img src="Media/Imagenes/bordado.webp" alt="RH4" width="35" height="30">
+                </div>
+                <div class="decoracion">
+                  <div class="border">
+                  </div>
+                </div>
+                <div class="champ-impacto d-flex">
+                  <div class="impacto-label">
+                    <label>Impacto</label>
+                  </div>
+                </div>
+                <div class="power-spike-pill d-flex">
+                  <div class="w-full parent-power-spike d-flex">
+                    <div class="bg-danger"
+                      style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 6em;"></div>
+                    <label class="easy-label" style="position: relative; top: 6.8em; right: 3.3em;">Early</label>
+                  </div>
+                </div>
+                <div class="w-full parent-power-spike d-flex">
+                  <div class="bg-warning"
+                    style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 4.2em; left: 4.2em;">
+                  </div>
+                  <label class="easy-label" style="position: relative; top: 5em; left: 1.3em;">Mid</label>
+                </div>
+              </div>
+              <div class="w-full parent-power-spike d-flex">
+                <div class="bg-success"
+                  style="width: 4rem; height: 1rem; border-radius: 10px; position: relative; top: 17.6em; right: 2.9em;">
+                </div>
+                <label class="easy-label" style="position: relative; top: 18.4em; right: 5.9em;">Late</label>
+              </div>
+            </div>
+          </a>
+        </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
